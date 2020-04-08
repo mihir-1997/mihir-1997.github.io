@@ -1,0 +1,73 @@
+nav {
+	background-color: #3399FF;
+}
+
+a {
+	color: white;
+}
+
+.image-wrapper {
+	height: 200px;
+	background-color: #99CCFF;
+	text-align: center
+}
+
+.personal-image {
+	margin-top: 95px; 
+ 	height: 205px;
+	width: 205px;
+	border-radius: 50%;
+	vertical-align: middle;
+	border: 5px solid white;
+}
+
+.about-first-row {
+	margin: 100px 30px 20px 30px;
+}
+.name {
+	font-size: 40px
+}
+
+.tagline-section {
+	margin-top: -5px;
+}
+
+.introduction-section {
+	margin-top: 30px;
+	text-align: justify;
+	font-size: large;
+}
+
+.quote-section {
+	font-style: italic;
+	font-family: Courier New;
+	background-color: #F7F8FA;
+	height: 100%;
+	text-align: justify;
+	padding: 8px;
+}
+
+.quote {
+	margin: 15px 15px 5px 15px;
+}
+
+.author {
+	float: right;
+}
+
+.links-section {
+	margin: 30px 30px 20px 40px;
+}
+
+.logo {
+	height: 40px;
+	width: 40px;
+}
+
+.github {
+	margin-left: -35px;
+}
+
+.stackoverflow {
+	margin-left: -75px;
+}

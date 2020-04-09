@@ -71,3 +71,58 @@ a {
 .stackoverflow {
 	margin-left: -75px;
 }
+
+.education-row {
+	margin-top: 110px;
+	height: 100vh;
+}
+
+.education-left-pane {
+	height: 100%;
+	background-color: #99CCFF;
+}
+
+.masters, .bachelors {
+	margin-top: 100px;
+}
+
+.sjsu-logo, .ld-logo {
+	height: 150px;
+	width: 150px;
+	border-radius: 50%;
+	margin-left: -75px;
+	background-color: white;
+	border: 10px solid white;
+}
+
+.graduation-cap-image {
+	height: 100%;
+}
+
+.graduation-cap {
+	height: 35px;
+	width: 35px;
+	margin-left: -70px;
+	margin-top: 20px;
+}
+
+.university {
+	margin-left: -100px;
+	margin-top: 10px;
+}
+
+.university-name {
+	font-size: xx-large;
+}
+
+.university-address {
+	font-weight: lighter;
+}
+
+.graduation-date {
+	margin-top: 15px;
+}
+
+.degree, .major {
+	font-size: large;
+}

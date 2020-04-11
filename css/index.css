@@ -82,9 +82,20 @@ a {
 	background-color: #99CCFF;
 }
 
-.masters, .bachelors {
-	margin-top: 100px;
+.education-heading {
+	height: 100%;
+	margin-top: 100%;
+	text-align: center;
 }
+
+.masters, .bachelors {
+	margin-top: 140px;
+}
+
+/*.masters > div:after{
+	background-image: url('../Images/SJSU Campus.jpg');
+	opacity: 0.5
+}*/
 
 .sjsu-logo, .ld-logo {
 	height: 150px;
@@ -128,7 +139,7 @@ a {
 }
 
 .skills {
-	height: 70vh;
+	height: 100vh;
 	background-color: #F7F8FA;
 }
 
@@ -140,8 +151,8 @@ a {
 .skills-header-container {
 	width: 100%;
 	text-align: center;
-	margin-top: 70px;
-	margin-bottom: 30px;
+	margin-top: 40px;
+	margin-bottom: 70px;
 }
 
 .skills-header {
@@ -152,7 +163,6 @@ a {
 	margin: 40px 0px 0px 50px;
 	background-color: white;
 	width: 100%;
-	height: 70%;
 }
 
 .skills-icon {
@@ -175,11 +185,20 @@ a {
 
 .main-skills ul {
 	list-style: none;
-	padding: 10px 20px;
+	padding: 10px 20px 10px 10px;
 }
 
 .main-skills ul li:before {
 	content: '✓';
 	color: #99CCFF;
 	margin-right: 5px;
+}
+
+.skill-logos {
+	margin-top: 80px;
+}
+
+.skill-logo {
+	height: 40px;
+	width: 40px;
 }

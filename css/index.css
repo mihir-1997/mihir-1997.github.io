@@ -88,14 +88,19 @@ a {
 	text-align: center;
 }
 
+/*.masters{
+	background-image: url('../Images/SJSU Background.jpg');
+	opacity: 0.5
+	height: 50%;
+	object-fit: cover;
+	width: 70%;
+	background-repeat: no-repeat;
+	color: white;
+}*/
+
 .masters, .bachelors {
 	margin-top: 140px;
 }
-
-/*.masters > div:after{
-	background-image: url('../Images/SJSU Campus.jpg');
-	opacity: 0.5
-}*/
 
 .sjsu-logo, .ld-logo {
 	height: 150px;
@@ -126,7 +131,8 @@ a {
 	font-size: xx-large;
 }
 
-.university-address {
+.university-address,
+.company-address {
 	font-weight: lighter;
 }
 
@@ -163,6 +169,7 @@ a {
 	margin: 40px 0px 0px 50px;
 	background-color: white;
 	width: 100%;
+	box-shadow: 2px 2px 6px grey;
 }
 
 .skills-icon {
@@ -201,4 +208,41 @@ a {
 .skill-logo {
 	height: 40px;
 	width: 40px;
+}
+
+.experience {
+	height: 100vh;
+}
+
+.experience-heading {
+	height: 20%;
+	text-align: center;
+	width: 100%;
+	margin-top: 30px;
+	margin-bottom: 40px;
+}
+
+.main-experience-margin {
+	margin-top: 40px;
+}
+
+.main-experience {
+	background-color: #F7F8FA;
+}
+
+.experience-2 {
+	margin-top: 50px;
+} 
+
+.experience-date {
+	text-align: right;
+}
+
+.experience-details {
+	text-align: justify;
+}
+
+.technologies ul li {
+	list-style: url('../Images/Arrow.png');
+	font-size: 18px;
 }

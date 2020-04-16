@@ -14,6 +14,10 @@
   	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
+	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+  	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css"></link>
 </head>
 
@@ -115,7 +119,7 @@
 								<img class="graduation-cap" src="Images/Graduation Cap.png" alt="Graduation">
 							</div>
 						</div>
-						<div class="col-7 university">
+						<div class="col-8 university">
 							<div class="row">
 								<div class="col-8 university-name">
 									<span>San Jose State University</span>
@@ -154,7 +158,7 @@
 								<img class="graduation-cap" src="Images/Graduation Cap.png" alt="Graduation">
 							</div>
 						</div>
-						<div class="col-7 university">
+						<div class="col-8 university">
 							<div class="row">
 								<div class="col-8 university-name">
 									<span>L D College of Engineering</span>
@@ -323,40 +327,38 @@
 
 		<!-- Experience Section -->
 		<div class="experience" id="experience">
-			<div class="container">
+			<!-- <div class="container"> -->
+				
 				<div class="row">
-					<div class="experience-heading">
-						<h1>Experience</h1>
+					<div class="experience-heading-wrapper">
+						<div class="experience-heading">
+							<h1>Experience</h1>
+						</div>						
 					</div>
 				</div>
 
 				<div class="row main-experience">
+					<div class="experience-border">
 					<div class="col main-experience-margin">
-						<div class="row">
+						<div class="row experience-1">
 							<div class="col-10">
 								<div class="row">
-								<!-- <div class="col-1"></div> -->
 								<div class="col-8 company-name">
 									<span><h3>F(X) Data Labs</h3></span>
 								</div>
 								<div class="col-4 experience-date">
 									<span>January 2019 - May 2019</span>
 								</div>
-								<!-- <div class="col-3"></div> -->
 							</div>
 							<div class="row">
-								<!-- <div class="col-1"></div> -->
 								<div class="col company-address">
 									<span>Ahmedabad, GJ, India</span>
 								</div>
-								<!-- <div class="col-3"></div> -->
 							</div>
 							<div class="row">
-								<!-- <div class="col-1"></div> -->
 								<div class="col experience-details">
-									<span >As an Associate Software Engineer at F(X) Data Labs PVT LTD, I learned the fundamentals of Machine Learning like Supervised Learning, Unsupervised Learning, and Reinforcement Learning. Automated the process of getting the initial data from business users for the Google AdWords project, an application to predict when, where and to whom to show ads to maximize the number of clicks per day for businesses. Analyzed different models including Random Forest, XGBoost, Decision Tree to achieve optimum lead scoring for fields like banking and health. Day to day activity included working on these projects to optimize them further and provide assistance to peers. Apart from this, I documented various technical and non-technical documents.</span>
+									<span >As an Associate Software Engineer at F(X) Data Labs PVT LTD, I learned the fundamentals of Machine Learning like Supervised Learning, Unsupervised Learning, and Reinforcement Learning. Automated the process of getting the initial data from business users for the Google AdWords project, an application to predict when, where and to whom to show ads to maximize the number of clicks per day for businesses for better growth. After the implementation of automation, the time to get data from customers was just 20% than what it was before. Analyzed different models including Random Forest, XGBoost, Decision Tree to achieve optimum lead scoring for fields like banking and health. Day to day activity included working on these projects to optimize them further and provide assistance to peers. Apart from this, I documented various technical and non-technical documents.</span>
 								</div>
-								<!-- <div class="col-3"></div> -->
 							</div>
 							</div>
 							<div class="col-2">
@@ -365,9 +367,13 @@
 										<li>Python</li>
 										<li>Numpy</li>
 										<li>Pandas</li>
+										<li>Tensorflow</li>
+										<li>Matplotlib</li>
 										<li>OpenCV</li>
 										<li>CNN</li>
 										<li>RNN</li>
+										<li>Git</li>
+										<li>Shell Scripting</li>
 									</ul>
 								</div>
 							</div>
@@ -375,28 +381,22 @@
 						<div class="row experience-2">
 							<div class="col-10">
 								<div class="row">
-								<!-- <div class="col-1"></div> -->
 								<div class="col-8 company-name">
 									<span><h3>F(X) Data Labs</h3></span>
 								</div>
 								<div class="col-4 experience-date">
 									<span>May 2018 - June 2018</span>
 								</div>
-								<!-- <div class="col-3"></div> -->
 							</div>
 							<div class="row">
-								<!-- <div class="col-1"></div> -->
 								<div class="col company-address">
 									<span>Ahmedabad, GJ, India</span>
 								</div>
-								<!-- <div class="col-3"></div> -->
 							</div>
 							<div class="row">
-								<!-- <div class="col-1"></div> -->
 								<div class="col experience-details">
-									<span >As a Web Developer intern, I explored Laravel, a PHP framework used to develop web applications based on Model-View-Controller architecture for clients to create a simple yet effective solution to showcase their work and achievements. The web application developed during that time implemented MySql as a backend data storage to store and retrieve information in real-time. The technologies that I explored include HTML5, CSS, JavaScript, Twitter BootStrap, AngularJS, etc.</span>
+									<span >As a Web Developer intern, I explored Laravel, a PHP framework used to develop web applications based on Model-View-Controller architecture for clients to create a simple yet effective solution to showcase their work and achievements. MySQL was the major backend database to store the data in a persistent manner. One of the major challenges was to retrieve data from the database fast so that webpage can be rendered in less time. To overcome this, query optimization techniques like Index Scans were applied and it reduced the time to load data by 27% which in-turn reduced the time to load the webpage by 20%.</span>
 								</div>
-								<!-- <div class="col-3"></div> -->
 							</div>
 							</div>
 							<div class="col-2">
@@ -414,8 +414,58 @@
 								</div>
 							</div>
 						</div>
-						
+					</div>
 				</div>
+				</div>
+			<!-- </div> -->
+		</div>
+
+		<!-- Projects Section-->
+		<div class="projects" id="projects">
+			<div class="row">
+				<div class="project-heading-wrapper">
+					<div class="project-heading">
+						<h1>Projects</h1>
+					</div>
+				</div>
+			</div>
+
+			<div class="projects-list row">
+				<div class="col-1"></div>
+				<div class="col project" onclick="location.href='#';" style="cursor: pointer;">
+					<div class="project-name">
+						<span>AISight</span>
+					</div>
+					<div class="project-desc">
+						<span>A device which focus on helping visually impaired people better understand their surroundings. The device is powered by Convolutional Neural Network followed by Recurrent Neural Network.</span>
+					</div>
+				</div>
+				<div></div>
+				<div class="col project" onclick="location.href='#';" style="cursor: pointer;">
+					<div class="project-name">
+						<span>BookMovie</span>
+					</div>
+					<div class="project-desc">
+						<span>A fully distributed SAAS application for online movie ticket booking. The app architecture is similar to that of microservices. The deployment was on Amazon Web Service and Google cloud Platform making it multi-cloud app.</span>
+					</div>
+				</div>
+				<div class="col project" onclick="location.href='#';" style="cursor: pointer;">
+					<div class="project-name">
+						<span>Distributed Database Management System</span>
+					</div>
+					<div class="project-desc">
+						<span>An implementation of distributed NoSql database in java from scratch using Restlet framework. The app had features like Consistency and Partition Tolerance and testing was done on Docker.</span>
+					</div>
+				</div>
+				<div class="col project" onclick="location.href='#';" style="cursor: pointer;">
+					<div class="project-name">
+						<span>Calorie Detection and Guide to Food</span>
+					</div>
+					<div class="project-desc">
+						<span>An app which helps users to achieve their health goals. It has two features, one is to detect calories of food from image and the other is to give general information regarding nutritional information of food.</span>
+					</div>
+				</div>
+				<div class="col-1"></div>
 			</div>
 		</div>
 
@@ -423,3 +473,38 @@
 </body>
 
 </html>
+
+<script>
+
+	$(document).ready(function(){
+		$( ".skill" ).hide( );
+		$( ".personal-image" ).hide();
+
+		$( ".personal-image" ).show("slide");
+
+		$(window).scroll(function() {
+			var hT = $( ".skills-list" ).offset().top,
+			   hH = $( ".skills-list" ).outerHeight(),
+			   wH = $(window).height(),
+			   wS = $(this).scrollTop();
+			if (wS > (hT+hH-wH)){
+				$( ".skill" ).show("slide");
+			}
+		});
+
+		$(function(){
+			$(".project-list").tabs();
+		});
+	});
+
+	function openCity(projectName) {
+		var i;
+		var x = document.getElementsByClassName("project");
+		for (i = 0; i < x.length; i++) {
+			console.log("kjh"+x[i].style.display);
+			x[i].style.display = "none";
+		}
+		document.getElementById(projectName).style.display = "block";
+	}
+
+</script>

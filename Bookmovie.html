@@ -38,7 +38,25 @@
 				<div class="row">
 					<div class="abstract-text">
 						<span>
-							BookMovie is a web interface for booking movies. It uses various microservices to handle different requests. For more details visit <a href="https://github.com/mihir-1997/fa19-281-pandavas" target="_blank">Github</a>. 
+							BookMovie is a Multi-Cloud Software as a Service application that serves as one platform for both theater owners and customers. Theater owners can add themselves on this platform and list theater information like location, number of screens along with movie shows information including how many movies are currently active in the theater and timings of the shows. From the customer perspective, they can book movie tickets in just a few clicks through the simple and user-friendly UI. The app asks users to enter the location to find movie theaters near them and once the ticket booking is done they get notified through text message and email. 
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Approach -->
+		<div class="row approach">
+			<div class="col">
+				<div class="row">
+					<div class="approach-heading">
+						<span>Approach</span>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="approach-text">
+						<span>
+							The application is a collection of Microservices developed in Golang and each of which can be scaled individually without affecting the other Microservices. The deployment was done on Amazon Web Service where each microservice was in different regions with load balancer attached to it to make it highly available with less load time. Each microservice was containerized using Docker and deployed on EC2 instances. The app talks to MongoDB for data retrieval and updates. Rather than using MongoDB Atlas which provides easy to use MongoDB shared cluster we developed our own fully working shared MongoDB cluster using bare-metal EC2 instances. All the Microservices were attached to a Kong API for better routing purposes. The frontend was in ReactJS and both Kong API and frontend were deployed on Google Cloud Platform. The reason for choosing the multi-cloud is the security of the data as this prevents the application from attackers from getting all the data if one of the service gets compromised. For more details visit <a href="https://github.com/mihir-1997/fa19-281-pandavas" target="_blank">BookMovie</a>. 
 						</span>
 					</div>
 				</div>
@@ -62,6 +80,7 @@
 							<li>Docker</li>
 							<li>Kong API</li>
 							<li>MongoDB</li>
+							<li>ReactJS</li>
 						</ul>
 					</div>
 				</div>

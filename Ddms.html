@@ -38,7 +38,7 @@
 				<div class="row">
 					<div class="abstract-text">
 						<span>
-							The project was an implementation of a perfectly working distributed NoSql database. The major task was to achieve Consistency and Partition Tolerance using vClock. The project was written in Java Programming Language and testing was done using docker. 
+							This project implements a perfectly working distributed NoSql database using Java language. The basic flow of the application is users can store the data as if they were storing it on any other major NoSql database like MongoDB. The major challenge was to achieve Consistency and Partition Tolerance as the database is distributed across multiple nodes and I implemented it very effectively. One can fire queries to store new information on one node and every node gets the query to store the same data as it was sent from the client. This is consistency. There might be situations where some of the nodes are down. After they rejoin the cluster the major task was to resolve conflicts if any present and this was solved using the Vector Clocks concept. This is how partition tolerance was achieved.
 						</span>
 					</div>
 				</div>
@@ -58,7 +58,7 @@
 						<ul>
 							<li>Java</li>
 							<li>Docker</li>
-							<li>Restlet</li>
+							<li>Restlet Framework</li>
 						</ul>
 					</div>
 				</div>

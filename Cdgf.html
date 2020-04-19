@@ -38,7 +38,43 @@
 				<div class="row">
 					<div class="abstract-text">
 						<span>
-							This project aims to provide insights into food and beverages for those who are health conscious. We used technologies like Machine Learning and Image Processing along with Android as a platform for making an application. The application takes a picture from the user and calculates calories from the picture of food and shows to the user using a neural network algorithm. Apart from that, it provides nutritional information about food so that the user can maintain dietary information. 
+							This is an android application for people who are health conscious or who want to improve their daily food habits to be fit. The app has two major functionalities: 
+							<br>
+							<ol>
+								<li>
+									Finding Calories of food:
+									<ul>
+										<li>
+											The app lets the user take an image of any food they consume on a daily basis and immediately calculates calories of it. Also, the app tracks the daily consumed food items and their calories so that it can recommend a highly balanced daily diet to the user. Users can set goals for daily calories to lose or gain weight and the app helps them to keep up with their goals
+										</li>
+									</ul>
+								</li>
+								<li>
+									Nutritional Information:
+									<ul>
+										<li>This feature allows the users to get general nutritional insights of the food they eat every day. The app has a large database storing this information.  
+										</li>
+									</ul>
+								</li>
+							</ol> 
+						</span>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Approach -->
+		<div class="row approach">
+			<div class="col">
+				<div class="row">
+					<div class="approach-heading">
+						<span>Approach</span>
+					</div>	
+				</div>
+				<div class="row">
+					<div class="approach-text">
+						<span>
+							We used Machine Learning along with Image Processing for this project. When the user takes an image of food, it gets fed to the first Convolutional Neural Network to find the presence of food. If there is no food item found in the image the users get alerted about the same. If the food item is present in the image then the image is fed to the second Convolutional Neural Network to find the amount of calories it contains. Each time a clicks a picture that image is compressed as preprocessing and then sent to the server so that there is no lag in response due to a larger image size.
 						</span>
 					</div>
 				</div>
@@ -57,9 +93,11 @@
 					<div class="technology-stack">
 						<ul>
 							<li>Android</li>
+							<li>Python</li>
 							<li>Machine Learning</li>
+							<li>Image Processing</li>
 							<li>OpenCV</li>
-							<li>CNN</li>
+							<li>Flask</li>
 						</ul>
 					</div>
 				</div>

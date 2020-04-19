@@ -16,7 +16,8 @@ body {
 .abstract-heading,
 .technology-heading,
 .prototype-heading,
-.output-heading {
+.output-heading,
+.approach-heading {
 	font-family: Times New Roman;
 	font-size: x-large;
 	font-weight: bold;

@@ -27,3 +27,15 @@ body {
 .abstract {
 	text-align: justify;
 }
+
+.left-margin,
+.right-margin {
+	min-height: 100vh;
+	height: auto;
+	width: auto;
+	background-color: #F7F8FA;
+}
+
+.content {
+	margin: 0px 2%;
+}

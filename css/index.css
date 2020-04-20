@@ -79,13 +79,15 @@ a {
 
 .education-left-pane {
 	height: 100%;
+	position: relative;
 	background-color: #99CCFF;
 }
 
 .education-heading {
-	height: 100%;
-	margin-top: 100%;
-	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 /*.masters{
@@ -156,13 +158,16 @@ a {
 
 .skills-header-container {
 	width: 100%;
-	text-align: center;
-	margin-top: 40px;
-	margin-bottom: 70px;
+	position: relative;
+	height: 25vh;
 }
 
 .skills-header {
-	display: inline-block;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	/*display: inline-block;*/
 }
 
 .skill {
@@ -218,18 +223,6 @@ a {
 	margin: 0px 30px;
 }
 
-.experience-heading-wrapper {
-	height: 20%;
-	width: 100%;
-	background-color: #99CCFF;
-}
-
-.experience-heading {
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 40px;
-}
-
 .main-experience-margin {
 	margin-top: 40px;
 }
@@ -260,16 +253,24 @@ a {
 	/*background: #99CCFF;*/
 }
 
-.project-heading-wrapper {
-	height: 20%;
+.project-heading-wrapper,
+.experience-heading-wrapper {
+	height: 30vh;
 	width: 100%;
 	background-color: #99CCFF;
+	position: relative;
 }
 
-.project-heading {
-	text-align: center;
-	margin-top: 30px;
-	margin-bottom: 40px;
+.experience-heading-wrapper {
+	height: 20vh;
+}
+
+.project-heading,
+.experience-heading {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
 }
 
 .project-heading h1,

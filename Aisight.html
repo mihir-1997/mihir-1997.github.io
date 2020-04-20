@@ -16,90 +16,92 @@
 	<link rel="stylesheet" type="text/css" href="css/aisight.css"></link>
 </head>
 <body>
-	<div class="container">
-
-		<!-- Heading -->
-		<div class="row">
-			<div class="heading-wrapper">
-				<div class="heading">
-					<span>AISight</span>
-				</div>
-			</div>
-		</div>
-
-		<!-- Abstract -->
-		<div class="row abstract">
-			<div class="col">
-				<div class="row">
-					<div class="abstract-heading">
-						<span>Abstract</span>
-					</div>	
-				</div>
-				<div class="row">
-					<div class="abstract-text">
-						<span>
-							Leveraging Computer Vision and Natural Language Processing, we here aim to provide a solution that can help visually impaired efficiently comprehend their surroundings. Our approach includes using a completely separate device intended for only a special task. Unlike contemporaries, we do not use object detection in the solution. Instead, we use image captioning to describe a scene. It does not focus on detecting objects in an image but provides a general description of happenings in the image. A device (i.e. raspberrypi) captures images and sends it to an image captioning model running on the cloud. The model responds with a caption or text describing that image which is then converted and yielded as audio from the device. The main aim behind using a separate product is to have phone constantly available for users to do other tasks. For more details visit <a href="https://github.com/mihir-1997/AISight" target="_blank">Github</a>. 
-						</span>
+	<div class="row">
+		<div class="col-2 left-margin"></div>
+		<div class="col content">
+			<!-- Heading -->
+			<div class="row">
+				<div class="heading-wrapper">
+					<div class="heading">
+						<span>AISight</span>
 					</div>
 				</div>
 			</div>
-		</div>
 
-		<!-- Technology -->
-		<div class="row technology">
-			<div class="col">
-				<div class="row">
-					<div class="technology-heading">
-						<span>Technology used</span>
+			<!-- Abstract -->
+			<div class="row abstract">
+				<div class="col">
+					<div class="row">
+						<div class="abstract-heading">
+							<span>Abstract</span>
+						</div>	
+					</div>
+					<div class="row">
+						<div class="abstract-text">
+							<span>
+								AISight is a project aimed to aid visually impaired people to see their surroundings better. It is a small RaspberryPI based device with a camera module and a power bank attached to it making it extremely portable, which describes the surroundings in the human voice. The device continuously takes images of surrounding and sends it to a server and the server sends a description of the image back to the device which is converted into human voice and output is given through either headphone or speaker. The model which is a Convolutional Neural Network followed by Recurrent Neural Network runs on the cloud which converts an image to human-readable sentences. In other words, rather than detecting objects from an image which is the past trend, the model generates the caption of the image. As preprocessing part, we compress the image so even if the internet connectivity is slow, it can generate audio quickly. For more details visit <a href="https://github.com/mihir-1997/AISight" target="_blank">Github</a>. 
+							</span>
+						</div>
 					</div>
 				</div>
-				<div class="row">
-					<div class="technology-stack">
-						<ul>
-							<li>Raspberry Pi</li>
-							<li>Python</li>
-							<li>Flask</li>
-							<li>OpenCV</li>
-							<li>Docker</li>
-							<li>Google Cloud Platform</li>
-							<li>Machine Learning</li>
-						</ul>
+			</div>
+
+			<!-- Technology -->
+			<div class="row technology">
+				<div class="col">
+					<div class="row">
+						<div class="technology-heading">
+							<span>Technology used</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="technology-stack">
+							<ul>
+								<li>Python</li>
+								<li>Flask</li>
+								<li>OpenCV</li>
+								<li>Docker</li>
+								<li>Google Cloud Platform</li>
+								<li>Machine Learning</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Prototype -->
+			<div class="row prototype">
+				<div class="col">
+					<div class="row">
+						<div class="prototype-heading">
+							<span>Prototype</span>
+						</div>
+					</div>
+					<div class="row">
+						<div class="prototype-image">
+							<img class="aisight-prototype" src="Images/aisight-prototype.png" alt="aisight-prototype">
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!-- Output -->
+			<div class="row output">
+				<div class="col">
+					<div class="row">
+						<div class="output-heading">
+							<span>Output</span>
+						</div>
+					</div>
+					<div class="row">
+						<video controls class="video-output">
+							<source src="Video/Ex-6.mp4" type="video/mp4">
+						</video>
 					</div>
 				</div>
 			</div>
 		</div>
-
-		<!-- Prototype -->
-		<div class="row prototype">
-			<div class="col">
-				<div class="row">
-					<div class="prototype-heading">
-						<span>Prototype</span>
-					</div>
-				</div>
-				<div class="row">
-					<div class="prototype-image">
-						<img class="aisight-prototype" src="Images/aisight-prototype.png" alt="aisight-prototype">
-					</div>
-				</div>
-			</div>
-		</div>
-
-		<!-- Output -->
-		<div class="row output">
-			<div class="col">
-				<div class="row">
-					<div class="output-heading">
-						<span>Output</span>
-					</div>
-				</div>
-				<div class="row">
-					<video controls>
-						<source src="Video/Ex-6.mp4" type="video/mp4">
-					</video>
-				</div>
-			</div>
-		</div>
+		<div class="col-2 right-margin"></div>
 	</div>
 </body>
 </html>

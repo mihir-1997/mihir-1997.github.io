@@ -14,6 +14,9 @@
   	<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+	<!-- Link for AOS -->
+	<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 	<!-- <script src="https://ajax.aspnetcdn.com/ajax/jQuery/jquery-3.4.1.min.js"></script> -->
 	<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
   	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
@@ -25,23 +28,27 @@
 	<div>
 
 		<!-- Top Navigation Bar -->
-		<nav class="navbar navbar-expand-lg rounded">
-		  <a class="navbar-brand" href="#">MIHIR PATEL</a>
-		  <ul class="navbar-nav ml-auto">
-		    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-			<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-			<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-		    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-		    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
-		  </ul>
-		</nav>
+		<div data-aos="flip-up">
+			<nav class="navbar navbar-expand-lg rounded">
+			  <a class="navbar-brand" href="#">MIHIR PATEL</a>
+			  <ul class="navbar-nav ml-auto">
+			    <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+				<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
+				<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+			    <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+			    <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+			  </ul>
+			</nav>
+		</div>
 
 		<!-- Aboout Section -->
-		<div class="about" id="about">
+		<div class="about" data-aos="fade-up" id="about">
 
 			<!-- Main (Self) Image -->
 			<div class="image-wrapper">
-				<img class="personal-image" src="Images/Main.JPG" alt="Avatar">
+				<div data-aos="zoom-in" data-aos-duration="1500">
+					<img class="personal-image" src="Images/Main.JPG" alt="Avatar">
+				</div>
 			</div>
 			<div class="row about-first-row">
 				<div class="col-9">
@@ -78,17 +85,17 @@
 			<!-- Links to the social platforms -->
 			<div class="links-section">
 				<div class="row">
-					<div class="col-1">
+					<div class="col-1" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
 						<a href="https://www.linkedin.com/in/mihirp97" target="_blank">
 							<img class="logo linkedin" src="Images/LinkedIn Logo.png" alt="linkedin">
 						</a>
 					</div>
-					<div class="col-1">
+					<div class="col-1" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
 						<a href="https://www.github.com/mihirpatelsjsu" target="_blank">
 							<img class="logo github" src="Images/Github Logo.png" alt="github">
 						</a>
 					</div>
-					<div class="col-1">
+					<div class="col-1" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
 						<a href="https://stackoverflow.com/users/12169960/mihir-patel" target="_blank">
 							<img class="logo stackoverflow" src="Images/Stackoverflow Logo.png" alt="stackoverflow">
 						</a>
@@ -98,7 +105,7 @@
 		</div>
 
 		<!-- Education Section -->
-		<div class="education" id="education">
+		<div class="education" data-aos="fade-left" id="education">
 			<div class="row education-row">
 				<div class="col-3 education-left-pane">	
 					<div class="education-heading">
@@ -108,7 +115,7 @@
 				<div class="col-9">
 
 					<!-- SJSU Section -->
-					<div class="masters row">
+					<div class="masters row" data-aos="flip-up" data-aos-duration="1500">
 						<div class="col-2">
 							<div class="masters-image">
 								<img class="sjsu-logo" src="Images/SJSU Logo.png" alt="SJSU">	
@@ -147,7 +154,7 @@
 					</div>
 
 					<!-- LD Section -->
-					<div class="bachelors row">
+					<div class="bachelors row" data-aos="flip-up" data-aos-duration="1500">
 						<div class="col-2">
 							<div class="bachelors-image">
 								<img class="ld-logo" src="Images/LD Logo.png" alt="LD">
@@ -188,7 +195,7 @@
 			</div>
 		</div>
 
-		<div class="skills" id="skills">
+		<div class="skills" data-aos="fade-right" id="skills">
 
 			<!-- Skills heading -->
 			<div class="row skills-heading">
@@ -204,7 +211,7 @@
 				<div class="col-1"></div>
 
 				<!-- DevOps -->
-				<div class="col skill">
+				<div class="col skill" data-aos="flip-right" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="devops-icon" src="Images/DevOps.png" alt="DevOps">
 					</div>
@@ -224,7 +231,7 @@
 				</div>
 
 				<!-- ML -->
-				<div class="col skill">
+				<div class="col skill" data-aos="flip-right" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="ml-icon" src="Images/ML.png" alt="ML">
 					</div>
@@ -247,7 +254,7 @@
 				</div>
 
 				<!-- Full Stack -->
-				<div class="col skill">
+				<div class="col skill" data-aos="flip-right" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="fullstack-icon" src="Images/Full Stack.png" alt="FullStack">
 					</div>
@@ -269,7 +276,7 @@
 				</div>
 
 				<!-- Others -->
-				<div class="col skill">
+				<div class="col skill" data-aos="zoom-in" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="others-icon" src="Images/Others.png" alt="Others">
 					</div>
@@ -326,7 +333,7 @@
 		</div>
 
 		<!-- Experience Section -->
-		<div class="experience" id="experience">
+		<div class="experience" data-aos="zoom-in" id="experience">
 			<!-- <div class="container"> -->
 				
 				<div class="row">
@@ -421,7 +428,7 @@
 		</div>
 
 		<!-- Projects Section-->
-		<div class="projects" id="projects">
+		<div class="projects" data-aos="zoom-out" id="projects">
 			<div class="row">
 				<div class="project-heading-wrapper">
 					<div class="project-heading">
@@ -432,7 +439,7 @@
 
 			<div class="projects-list row">
 				<div class="col-1"></div>
-				<div class="col project" onclick="location.href='Aisight.html';" style="cursor: pointer;">
+				<div class="col project" onclick="location.href='Aisight.html';" style="cursor: pointer;" data-aos="flip-up" data-aos-duration="1500">
 					<div class="project-name">
 						<span>AISight</span>
 					</div>
@@ -441,7 +448,7 @@
 					</div>
 				</div>
 				<div></div>
-				<div class="col project" onclick="location.href='Bookmovie.html';" style="cursor: pointer;">
+				<div class="col project" onclick="location.href='Bookmovie.html';" style="cursor: pointer;" data-aos="flip-up" data-aos-duration="1500">
 					<div class="project-name">
 						<span>BookMovie</span>
 					</div>
@@ -449,7 +456,7 @@
 						<span>A fully distributed SAAS application for online movie ticket booking. The app architecture is similar to that of microservices. The deployment was on Amazon Web Service and Google cloud Platform making it a multi-cloud deployed app.</span>
 					</div>
 				</div>
-				<div class="col project" onclick="location.href='Ddms.html';" style="cursor: pointer;">
+				<div class="col project" onclick="location.href='Ddms.html';" style="cursor: pointer;" data-aos="flip-up" data-aos-duration="1500">
 					<div class="project-name">
 						<span>Distributed Database Management System</span>
 					</div>
@@ -457,7 +464,7 @@
 						<span>An implementation of a fully working distributed NoSql database in java from scratch using the Restlet framework. The product has features like Consistency and Partition Tolerance. The final product was tested on Docker.</span>
 					</div>
 				</div>
-				<div class="col project" onclick="location.href='Cdgf.html';" style="cursor: pointer;">
+				<div class="col project" onclick="location.href='Cdgf.html';" style="cursor: pointer;" data-aos="flip-up" data-aos-duration="1500">
 					<div class="project-name">
 						<span>Calorie Detection and Guide to Food</span>
 					</div>
@@ -470,41 +477,14 @@
 		</div>
 
 	</div>
+
+	<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+	<script>
+	    AOS.init({
+	    	duration: 1200
+	    });
+	</script>
+
 </body>
 
 </html>
-
-<script>
-
-	$(document).ready(function(){
-		$( ".skill" ).hide( );
-		$( ".personal-image" ).hide();
-
-		$( ".personal-image" ).show("slide");
-
-		$(window).scroll(function() {
-			var hT = $( ".skills-list" ).offset().top,
-			   hH = $( ".skills-list" ).outerHeight(),
-			   wH = $(window).height(),
-			   wS = $(this).scrollTop();
-			if (wS > (hT+hH-wH)){
-				$( ".skill" ).show("slide");
-			}
-		});
-
-		$(function(){
-			$(".project-list").tabs();
-		});
-	});
-
-	function openCity(projectName) {
-		var i;
-		var x = document.getElementsByClassName("project");
-		for (i = 0; i < x.length; i++) {
-			console.log("kjh"+x[i].style.display);
-			x[i].style.display = "none";
-		}
-		document.getElementById(projectName).style.display = "block";
-	}
-
-</script>

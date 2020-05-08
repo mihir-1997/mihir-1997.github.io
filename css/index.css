@@ -24,12 +24,15 @@ a {
 .about-first-row {
 	margin: 100px 30px 20px 30px;
 }
+
 .name {
-	font-size: 40px
+	font-size: 40px;
+	color: #3399FF;
 }
 
 .tagline-section {
 	margin-top: -5px;
+	color: #3399FF;
 }
 
 .introduction-section {
@@ -90,12 +93,13 @@ a {
 	transform: translate(-50%, -50%);
 }
 
-/*.masters{
-	background-image: url('../Images/SJSU Background.jpg');
-	opacity: 0.5
+/*.masters-wrapper{
+	background-image: url('../Images/SJSU Campus (1).jpg');
+	opacity: 1;
+	background:rgba(0,0,0,0.6);
 	height: 50%;
 	object-fit: cover;
-	width: 70%;
+	width: 100%;
 	background-repeat: no-repeat;
 	color: white;
 }*/
@@ -167,6 +171,7 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
+	color: #3399FF;
 	/*display: inline-block;*/
 }
 
@@ -253,6 +258,15 @@ a {
 	text-align: justify;
 }
 
+.technologies {
+	background-color: #F7F8FA;
+	border: 0.5px solid #99CCFF;
+}
+
+.technologies ul {
+	margin-top: 10px;
+}
+
 .technologies ul li {
 	list-style: url('../Images/Arrow.png');
 	font-size: 16px;
@@ -281,7 +295,8 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	border-bottom: 3px solid #99CCFF;
+	/*border-bottom: 3px solid #99CCFF;*/
+	color: #3399FF;
 }
 
 .project-heading h1,
@@ -320,7 +335,7 @@ a {
 }
 
 .project-image {
-	border-radius: 3%;
+	border-radius: 3% 3% 0 0;
 	text-align: center;
 	font-weight: bold;
 	width: 100%;
@@ -337,22 +352,22 @@ a {
 }
 
 .aisight-image {
-	/*opacity: 0.7;*/
+	opacity: 0.9;
 	background-image: url('../Images/aisight.jpg');
 }
 
 .bookmovie-image {
-	/*opacity: 0.7;*/
-	background-image: url("../Images/bookmovie.png");
+	opacity: 0.9;
+	background-image: url("../Images/bookmovie.jpg");
 }
 
 .ddms-image {
-	/*opacity: 0.7;*/
+	opacity: 0.9;
 	background-image: url('../Images/ddms.jpg');
 }
 
 .cdgf-image {
-	/*opacity: 0.7;*/
+	opacity: 0.9;
 	background-image: url("../Images/cdgf.jpg");
 }
 

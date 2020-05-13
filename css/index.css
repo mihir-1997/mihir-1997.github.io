@@ -139,7 +139,7 @@ a {
 
 .university-address,
 .company-address {
-	font-weight: lighter;
+	color: #808080;
 }
 
 .graduation-date {
@@ -225,11 +225,11 @@ a {
 }
 
 .experience-border {
-	margin: 0px 30px;
+	/*margin: 0px 30px;*/
 }
 
 .main-experience-margin {
-	margin-top: 40px;
+	/*margin-top: 40px;*/
 }
 
 .main-experience {
@@ -244,11 +244,17 @@ a {
 .experience-1,
 .experience-2 {
 	margin: 0 5%;
+	border: 1px solid #C0C0C0;
+	border-top: 4px solid #99CCFF;
 }
 
 .experience-2 {
-	margin-top: 10px;
+	margin-top: 2%;
 } 
+
+.experience-first-row {
+	margin-top: 1%;
+}
 
 .experience-date {
 	text-align: right;
@@ -260,7 +266,7 @@ a {
 
 .technologies {
 	background-color: #F7F8FA;
-	border: 0.5px solid #99CCFF;
+	/*border: 0.5px solid #99CCFF;*/
 }
 
 .technologies ul {
@@ -320,7 +326,7 @@ a {
 	cursor: pointer;
 	border-radius: 3%;
 	box-shadow: 0px 0px 5px grey;
-
+	border-bottom: 3px solid #3399FF;
 }
 
 .project-image-wrapper {

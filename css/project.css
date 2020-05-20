@@ -39,3 +39,8 @@ body {
 .content {
 	margin: 0px 2%;
 }
+
+.image-wrapper {
+	margin: 2% 0;
+	height: 100%;
+}

@@ -377,6 +377,11 @@ a {
 	background-image: url("../Images/cdgf.jpg");
 }
 
+.opinion-image {
+	opacity: 0.9;
+	background-image: url("../Images/opinion.jpg");
+}
+
 .project-desc-wrapper {
 	height: 40%;
 }

@@ -46,3 +46,7 @@ body {
 .content {
 	margin: 0px 2%;
 }
+
+.sub-part {
+	font-weight: bold;
+}

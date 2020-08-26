@@ -48,6 +48,7 @@ a {
 	height: 100%;
 	text-align: justify;
 	padding: 8px;
+	font-size: 1.2em;;
 }
 
 .quote {
@@ -63,16 +64,16 @@ a {
 }
 
 .logo {
-	height: 40px;
-	width: 40px;
+	height: 3em;
+	width: 3em;
 }
 
 .github {
-	margin-left: -35px;
+	/*margin-left: -35px;*/
 }
 
 .stackoverflow {
-	margin-left: -75px;
+	/*margin-left: -75px;*/
 }
 
 .education-row {
@@ -392,4 +393,10 @@ a {
 	font-size: x-small;
 	text-align: justify;
 	margin: 0 10px;
+}
+
+/* Mobile */
+
+@media only screen and (max-width: 400px) {
+	
 }

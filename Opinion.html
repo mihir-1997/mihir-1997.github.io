@@ -73,6 +73,19 @@
 										</li>
 								 	</ol>
 								</p>
+								<p>
+									<div class="abstract-heading">
+										<span>CI/CD Pipeline</span>
+									</div>	
+									The project is deployed on AWS using a fully automated CI/CD pipeline. The Github is used for Continuous Integration and combination of Docker and Jenkins are used for Continuous Deployment.
+									
+									<ol>
+										<li>New changes are commited to Github</li>
+										<li>Github triggers a webhook sending a post request to Jenkins about the changes</li>
+										<li>Jenkins starts first pipeline which fetches all changes from Github and builds a docker image</li>
+										<li>Once the first pipeline gets completed, it triggers second pipeline which uses the `docker image` built during first pipeline and runs a container along with removing the older one and now new changes are live</li>
+									</ol>
+								</p>
 							</span>
 						</div>
 					</div>

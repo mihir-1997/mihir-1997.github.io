@@ -1,0 +1,385 @@
+/* @media only screen and (max-width: 1000px) {
+
+    .introduction, .quote, .author{
+        font-size: medium;
+    }
+
+} */
+
+@media only screen and (max-width: 990px) {
+
+    .name-section, .tagline-section {
+        text-align: center;
+    }
+
+    h1{
+        font-size: 1.9em;
+    }
+
+    .quote-section {
+        margin-top: 20px;
+    }
+
+    .links-section {
+        margin-top: 50px;
+    }
+
+    .link {
+        margin-left: 20px
+    }
+
+    /* Education */
+    .sjsu-logo, .ld-logo {
+        height: 130px;
+        width: 130px;
+    }
+
+    .university-image-wrapper {
+        margin: 0px;
+    }
+
+    .graduation-cap {
+        height: 30px;
+        width: 30px;
+        margin-top: 20px;
+    }
+
+    .university-name {
+        font-size: x-large;
+    }
+
+    .university {
+        margin-left: -5%;
+        margin-top: 10px;
+    }
+
+    .masters-image, .bachelors-image {
+        margin-left: -60%
+    }
+
+    .degree, .major {
+        font-size: medium;
+    }
+
+    .graduation-date {
+        margin-top: 5px;
+    }
+
+    /*Skills*/
+    .skill-logos {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+
+    /* Education */
+
+    h1{
+        font-size: 1.8em;
+    }
+
+    h2{
+        font-size: 1.6em;
+    }
+
+    h3{
+        font-size: 1.4em;
+    }
+
+    .sjsu-logo, .ld-logo {
+        height: 110px;
+        width: 110px;
+    }
+
+    .university-image-wrapper {
+        margin: 0px;
+    }
+
+    .graduation-cap {
+        height: 25px;
+        width: 25px;
+        margin-top: 15px;
+    }
+
+    .university-name {
+        font-size: large;
+    }
+
+    .university-address,
+    .experience-date,
+    .company-address {
+        font-size: small;
+    }
+
+    .masters-image, .bachelors-image {
+        margin-left: -70%
+    }
+
+    .degree, .major {
+        font-size: small;
+    }
+
+    .graduation-date {
+        margin-top: 5px;
+        font-size: small;
+    }
+
+}
+
+@media only screen and (max-width: 600px) {
+
+    h1{
+        font-size: 1.7em;
+    }
+
+    h2{
+        font-size: 1.5em;
+    }
+
+    h3{
+        font-size: 1.3em;
+    }
+
+    .introduction, .quote, .author, .experience-details, .technologies ul li, .main-skills ul li{
+        font-size: small;
+    }
+
+    .logo {
+        height: 2.5em;
+        width: 2.5em;
+    }
+
+    .image-wrapper {
+        height: 150px;
+    }
+    
+    .personal-image {
+        margin-top: 45px; 
+        height: 155px;
+        width: 155px;
+    }
+
+    .about-first-row {
+        margin-top: 50px;
+    }
+
+    /* Education */
+
+    /* .education-heading h1{
+        font-size: 1.5em;
+    } */
+
+    .university-image-wrapper {
+        margin: 0px;
+    }
+    
+    .sjsu-logo, .ld-logo {
+        height: 90px;
+        width: 90px;
+    }
+
+    .graduation-cap {
+        height: 20px;
+        width: 20px;
+        margin-top: 15px;
+    }
+
+    .university {
+        margin-left: -3%;
+        margin-top: 10px;
+    }
+
+    .university-name {
+        font-size: medium;
+    }
+
+    .university-address,
+    .experience-date,
+    .company-address {
+        font-size: x-small;
+    }
+
+    .masters-image, .bachelors-image {
+        margin-left: -80%
+    }
+
+    .degree, .major {
+        font-size: x-small;
+    }
+
+    .graduation-date {
+        margin-top: 5px;
+        font-size: x-small;
+    }
+
+    /* Skills */
+
+    /* Projects */
+
+    .projects-list, .skills-list {
+        margin: 20px 50px 20px 50px;
+        /*background-color: #F7F8FA;*/
+    }
+
+    .project, .skill {
+        width: 400px;
+        margin: 10px
+    }
+
+    .skills-header-container {
+        height: 15vh
+    }
+
+    .skills-icon {
+        height: 30px
+    }
+
+    .skill {
+        margin: 20px 10px
+    }
+
+    .devops-icon,
+    .ml-icon,
+    .fullstack-icon,
+    .others-icon{
+        height: 60px;
+        width: 60px;
+        margin-top: -30px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+    /* Education */
+
+    h1{
+        font-size: 1.3em;
+    }
+
+    h2{
+        font-size: 1.2em;
+    }
+
+    h3{
+        font-size: 1.1em;
+    }
+
+    .university-image-wrapper {
+        margin: 0px;
+    }
+    
+    .sjsu-logo, .ld-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    .graduation-cap {
+        height: 15px;
+        width: 15px;
+        margin-top: 15px;
+    }
+
+    .university {
+        margin-left: -1%;
+        margin-top: 10px;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+
+    .mobile-education h1{
+        font-size: 1.0em;
+        font-family: "Segoe UI",Arial,sans-serif;
+        margin: 1px;
+    }
+
+    .mobile-education h2{
+        font-size: 0.8em;
+        font-family: "Segoe UI",Arial,sans-serif;
+        margin: 1px;
+    }
+
+    .mobile-education h3{
+        font-size: 0.6em;
+        font-family: "Segoe UI",Arial,sans-serif;
+        margin: 1px;
+    }
+
+    .mobile-education h4 {
+        font-size: 0.5em;
+        font-family: "Segoe UI",Arial,sans-serif;
+        margin: 1px;
+        color: #808080;
+    }
+
+    .mobile-education-heading > h1 {
+        font-size: 1.3em;
+        font-family: "Segoe UI",Arial,sans-serif;
+    }
+
+    .mobile-education {
+        display: block;
+        height: auto;
+        margin: 10px 10px;
+    }
+
+    .mobile-education-column {
+        margin: 20px 0px 0px 20px;
+    }
+
+    .mobile-education-row {
+        margin: 40px 0px;
+    }
+
+    .mobile-education-heading-wrapper {
+        position: relative;
+        height: 100px;
+        background-color: #99CCFF;
+        margin-top: 10%
+    }
+
+    .mobile-education-heading {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    .mobile-university-logo {
+        height: 50px;
+        width: 50px
+    }
+
+    .mobile-education-heading h1 {
+        font-family: Optima;
+    }
+
+    .mobile-education-line {
+        width: 100%;
+        
+    }
+
+    .education {
+        display: none;
+    }
+
+    .project-name {
+        font-size: medium;
+    }
+
+    .skills-list,
+    .projects-list {
+        margin: 0px 15px;
+    }
+
+    .skills-heading {
+        margin: 0px
+    }
+
+    .experience-heading-wrapper,
+    .project-heading-wrapper {
+        height: 100px;
+    }
+
+}

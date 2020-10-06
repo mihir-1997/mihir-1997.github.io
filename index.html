@@ -23,25 +23,27 @@
 	<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" type="text/css" href="css/index.css">
+	<link rel="stylesheet" type="text/css" href="css/nav-bar.css">
+	<link rel="stylesheet" type="text/css" href="css/responsive.css">
+	<script src="js/index.js"></script>
 	</link>
 </head>
 
 <body>
 	<div>
-
-		<!-- Top Navigation Bar -->
-		<div data-aos="flip-up">
-			<nav class="navbar navbar-expand-lg rounded">
-				<a class="navbar-brand" href="#">MIHIR PATEL</a>
-				<ul class="navbar-nav ml-auto">
-					<li class="nav-item"><a class="nav-link" href="#about">About</a></li>
-					<li class="nav-item"><a class="nav-link" href="#education">Education</a></li>
-					<li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
-					<li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
-					<li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+		<header>
+			<nav>
+				<a href="#">MIHIR PATEL</a>
+				<button class="mobile-nav" onclick="mobile_button()"></button>
+				<ul id="navbar-items">
+					<li><a href="#about">About</a></li>
+					<li><a href="#both-education">Education</a></li>
+					<li><a href="#skills">Skills</a></li>
+					<li><a href="#experience">Experience</a></li>
+					<li><a href="#projects">Projects</a></li>
 				</ul>
 			</nav>
-		</div>
+		</header>
 
 		<!-- Aboout Section -->
 		<div class="about" id="about">
@@ -53,11 +55,11 @@
 				</div>
 			</div>
 			<div class="row about-first-row">
-				<div class="col-9">
+				<div class="col-sm-9">
 
 					<!-- Name, Tagline and Introduction -->
 					<div class="name-section">
-						<span class="name">Mihir Patel</span>
+						<h1>Mihir Patel</h1>
 					</div>
 					<div class="tagline-section">
 						<span class="tagline">An Emerging Software Engineer</span>
@@ -73,7 +75,7 @@
 						</span>
 					</div>
 				</div>
-				<div class="col-3">
+				<div class="col-sm-3">
 
 					<!-- Quote Section -->
 					<div class="quote-section">
@@ -89,116 +91,153 @@
 					</div>
 				</div>
 			</div>
-
-			<!-- Links to the social platforms -->
-			<div class="links-section">
-				<div class="row">
-					<div class="col-1" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
-						<a href="https://www.linkedin.com/in/mihirp97" target="_blank">
-							<img class="logo linkedin" src="Images/LinkedIn Logo.png" alt="linkedin">
-						</a>
-					</div>
-					<div class="col-1" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
-						<a href="https://www.github.com/mihir-1997" target="_blank">
-							<img class="logo github" src="Images/Github Logo.png" alt="github">
-						</a>
-					</div>
-					<div class="col-1" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
-						<a href="https://stackoverflow.com/users/12169960/mihir-patel" target="_blank">
-							<img class="logo stackoverflow" src="Images/Stackoverflow Logo.png" alt="stackoverflow">
-						</a>
-					</div>
-				</div>
-			</div>
 		</div>
 
 		<!-- Education Section -->
-		<div class="education" id="education">
-			<div class="row education-row">
-				<div class="col-3 education-left-pane">
-					<div class="education-heading">
+		<div id="both-education">
+			<div class="education" id="education">
+				<div class="row education-row">
+					<div class="col-3 education-left-pane">
+						<div class="education-heading">
+							<h1>Education</h1>
+						</div>
+					</div>
+					<div class="col-9">
+
+						<!-- SJSU Section -->
+						<div class="masters row" data-aos="flip-up" data-aos-duration="1500">
+							<div class="col-2 university-image-wrapper">
+								<div class="masters-image">
+									<img class="sjsu-logo" src="Images/SJSU Logo.png" alt="SJSU">
+								</div>
+							</div>
+							<div class="col-1">
+								<div class="graduation-cap-image">
+									<img class="graduation-cap" src="Images/Graduation Cap.png" alt="Graduation">
+								</div>
+							</div>
+							<div class="col-9 university">
+								<div class="row">
+									<div class="col-8 university-name">
+										<span>San Jose State University</span>
+									</div>
+									<div class="col-4 graduation-date">
+										<span>August 2019 - May 2021</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col university-address">
+										<span>San Jose, CA</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col degree">
+										<span>Master of Science</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col major">
+										<span>Software Engineering</span>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<!-- LD Section -->
+						<div class="bachelors row" data-aos="flip-up" data-aos-duration="1500">
+							<div class="col-2 university-image-wrapper">
+								<div class="bachelors-image">
+									<img class="ld-logo" src="Images/LD Logo.png" alt="LD">
+								</div>
+							</div>
+							<div class="col-1">
+								<div class="graduation-cap-image">
+									<img class="graduation-cap" src="Images/Graduation Cap.png" alt="Graduation">
+								</div>
+							</div>
+							<div class="col-9 university">
+								<div class="row">
+									<div class="col-8 university-name">
+										<span>L D College of Engineering</span>
+									</div>
+									<div class="col-4 graduation-date">
+										<span>August 2015 - June 2019</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col university-address">
+										<span>Ahmedabad, GJ, India</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col degree">
+										<span>Bachelor of Engineering</span>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col major">
+										<span>Information Technology</span>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<div class="mobile-education">
+				<div class="row mobile-education-heading-wrapper">
+					<div class="mobile-education-heading">
 						<h1>Education</h1>
 					</div>
 				</div>
-				<div class="col-9">
-
-					<!-- SJSU Section -->
-					<div class="masters-wrapper row">
-						<div class="col">
-							<div class="masters row" data-aos="flip-up" data-aos-duration="1500">
-								<div class="col-2">
-									<div class="masters-image">
-										<img class="sjsu-logo" src="Images/SJSU Logo.png" alt="SJSU">
-									</div>
+				<div class="row">
+					<div class="col mobile-education-column">
+						<div class="row mobile-education-row">
+							<div class="col-3">
+								<div class="mobile-masters-image">
+									<img class="mobile-university-logo" src="Images/SJSU Logo.png" alt="SJSU">
 								</div>
-								<div class="col-1">
-									<div class="graduation-cap-image">
-										<img class="graduation-cap" src="Images/Graduation Cap.png" alt="Graduation">
-									</div>
+							</div>
+							<div class="col">
+								<div class="row mobile-education-line">
+									<h1>San Jose State University</h1>
 								</div>
-								<div class="col-8 university">
-									<div class="row">
-										<div class="col-8 university-name">
-											<span>San Jose State University</span>
-										</div>
-										<div class="col-4 graduation-date">
-											<span>August 2019 - May 2021</span>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col university-address">
-											<span>San Jose, CA</span>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col degree">
-											<span>Master of Science</span>
-										</div>
-									</div>
-									<div class="row">
-										<div class="col major">
-											<span>Software Engineering</span>
-										</div>
-									</div>
+								<div class="row mobile-education-line">
+									<h4>San Jose, CA, US</h4>
+								</div>
+								<div class="row mobile-education-line">
+									<h3>August 2019 - May 2021</h3>
+								</div>
+								<div class="row mobile-education-line">
+									<h2>Master of Science</h2>
+								</div>
+								<div class="row mobile-education-line">
+									<h2>Software Engineering</h2>
 								</div>
 							</div>
 						</div>
-					</div>
-
-					<!-- LD Section -->
-					<div class="bachelors row" data-aos="flip-up" data-aos-duration="1500">
-						<div class="col-2">
-							<div class="bachelors-image">
-								<img class="ld-logo" src="Images/LD Logo.png" alt="LD">
-							</div>
-						</div>
-						<div class="col-1">
-							<div class="graduation-cap-image">
-								<img class="graduation-cap" src="Images/Graduation Cap.png" alt="Graduation">
-							</div>
-						</div>
-						<div class="col-8 university">
-							<div class="row">
-								<div class="col-8 university-name">
-									<span>L D College of Engineering</span>
-								</div>
-								<div class="col-4 graduation-date">
-									<span>August 2015 - June 2019</span>
+						<div class="row mobile-education-row">
+							<div class="col-3">
+								<div class="mobile-masters-image">
+									<img class="mobile-university-logo" src="Images/LD Logo.png" alt="SJSU">
 								</div>
 							</div>
-							<div class="row">
-								<div class="col university-address">
-									<span>Ahmedabad, GJ, India</span>
+							<div class="col">
+								<div class="row mobile-education-line">
+									<h1>L D College of Engieering</h1>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col degree">
-									<span>Bachelor of Engineering</span>
+								<div class="row mobile-education-line">
+									<h4>Ahmedabad, Gujarat, India</h4>
 								</div>
-							</div>
-							<div class="row">
-								<div class="col major">
-									<span>Information Technology</span>
+								<div class="row mobile-education-line">
+									<h3>August 2015 - May 2019</h3>
+								</div>
+								<div class="row mobile-education-line">
+									<h2>Bachelor of Engieering</h2>
+								</div>
+								<div class="row mobile-education-line">
+									<h2>Information Technology</h2>
 								</div>
 							</div>
 						</div>
@@ -220,10 +259,10 @@
 
 			<!-- Main Skills -->
 			<div class="row skills-list">
-				<div class="col-1"></div>
+				<div class="col-sm-1"></div>
 
 				<!-- DevOps -->
-				<div class="col skill" data-aos="flip-right" data-aos-duration="1500">
+				<div class="col-sm-2 skill" data-aos="flip-right" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="devops-icon" src="Images/DevOps.png" alt="DevOps">
 					</div>
@@ -243,7 +282,7 @@
 				</div>
 
 				<!-- ML -->
-				<div class="col skill" data-aos="flip-right" data-aos-duration="1500">
+				<div class="col-sm-2 skill" data-aos="flip-right" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="ml-icon" src="Images/ML.png" alt="ML">
 					</div>
@@ -266,7 +305,7 @@
 				</div>
 
 				<!-- Full Stack -->
-				<div class="col skill" data-aos="flip-right" data-aos-duration="1500">
+				<div class="col-sm-2 skill" data-aos="flip-right" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="fullstack-icon" src="Images/Full Stack.png" alt="FullStack">
 					</div>
@@ -290,7 +329,7 @@
 				</div>
 
 				<!-- Others -->
-				<div class="col skill" data-aos="flip-right" data-aos-duration="1500">
+				<div class="col-sm-2 skill" data-aos="flip-right" data-aos-duration="1500">
 					<div class="skills-icon">
 						<img class="others-icon" src="Images/Others.png" alt="Others">
 					</div>
@@ -309,7 +348,7 @@
 						</ul>
 					</div>
 				</div>
-				<div class="col-1"></div>
+				<div class="col-sm-1"></div>
 			</div>
 
 			<!-- Skills Logos -->
@@ -362,14 +401,14 @@
 				<div class="experience-border">
 					<div class="col main-experience-margin">
 						<div class="row experience-1">
-							<div class="col-10">
+							<div class="col-sm-10">
 								<div class="row experience-first-row">
 									<div class="col-8 company-name">
 										<span>
 											<h3>Associate Software Engineer/F(X) Data Labs</h3>
 										</span>
 									</div>
-									<div class="col-4 experience-date">
+									<div class="col-sm-4 experience-date">
 										<span>January 2019 - May 2019</span>
 									</div>
 								</div>
@@ -380,15 +419,20 @@
 								</div>
 								<div class="row">
 									<div class="col experience-details">
-										<span>As an Associate Software Engineer at F(X) Data Labs PVT LTD, I learned the
+										<span>As an Associate Software Engineer at F(X) Data Labs PVT LTD, I learned
+											the
 											fundamentals of Machine Learning like Supervised Learning, Unsupervised
-											Learning, and Reinforcement Learning. Automated the process of getting the
+											Learning, and Reinforcement Learning. Automated the process of getting
+											the
 											initial data from business users for the Google AdWords project, an
-											application to predict when, where and to whom to show ads to maximize the
+											application to predict when, where and to whom to show ads to maximize
+											the
 											number of clicks per day for businesses for better growth. After the
-											implementation of automation, the time to get data from customers was just
+											implementation of automation, the time to get data from customers was
+											just
 											20% than what it was before. Analyzed different models including Random
-											Forest, XGBoost, Decision Tree to achieve optimum lead scoring for fields
+											Forest, XGBoost, Decision Tree to achieve optimum lead scoring for
+											fields
 											like banking and health. Day to day activity included working on these
 											projects to optimize them further and provide assistance to peers. Apart
 											from this, I documented various technical and non-technical
@@ -396,7 +440,7 @@
 									</div>
 								</div>
 							</div>
-							<div class="col-2">
+							<div class="col-sm-2">
 								<div class="technologies">
 									<ul>
 										<li>Python</li>
@@ -414,7 +458,7 @@
 							</div>
 						</div>
 						<div class="row experience-2">
-							<div class="col-10">
+							<div class="col-sm-10">
 								<div class="row experience-first-row">
 									<div class="col-8 company-name">
 										<span>
@@ -434,17 +478,21 @@
 									<div class="col experience-details">
 										<span>As a Web Developer intern, I explored Laravel, a PHP framework used to
 											develop web applications based on Model-View-Controller architecture for
-											clients to create a simple yet effective solution to showcase their work and
-											achievements. MySQL was the major backend database to store the data in a
-											persistent manner. One of the major challenges was to retrieve data from the
+											clients to create a simple yet effective solution to showcase their work
+											and
+											achievements. MySQL was the major backend database to store the data in
+											a
+											persistent manner. One of the major challenges was to retrieve data from
+											the
 											database fast so that webpage can be rendered in less time. To overcome
 											this, query optimization techniques like Index Scans were applied and it
-											reduced the time to load data by 27% which in-turn reduced the time to load
+											reduced the time to load data by 27% which in-turn reduced the time to
+											load
 											the webpage by 20%.</span>
 									</div>
 								</div>
 							</div>
-							<div class="col-2">
+							<div class="col-sm-2">
 								<div class="technologies">
 									<ul>
 										<li>Laravel</li>
@@ -476,8 +524,8 @@
 			</div>
 
 			<div class="projects-list row">
-				<div class="col"></div>
-				<div class="col-2 project" onclick="location.href='Aisight.html';">
+				<!-- <div class="col"></div> -->
+				<div class="col-sm project" onclick="location.href='Aisight.html';">
 					<div class="row project-image-wrapper">
 						<div class="project-image aisight-image">
 							<div class="project-name">
@@ -488,12 +536,13 @@
 					<div class="row project-desc-wrapper">
 						<div class="project-desc">
 							<span>A small device that focuses on helping visually impaired people better understand
-								their surroundings. The device is powered by Convolutional Neural Network followed by
+								their surroundings. The device is powered by Convolutional Neural Network followed
+								by
 								Recurrent Neural Network to find what is in the image.</span>
 						</div>
 					</div>
 				</div>
-				<div class="col-2 project" onclick="location.href='Bookmovie.html';">
+				<div class="col-sm project" onclick="location.href='Bookmovie.html';">
 					<div class="row project-image-wrapper">
 						<div class="project-image bookmovie-image">
 							<div class="project-name">
@@ -509,7 +558,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-2 project" onclick="location.href='Opinion.html';">
+				<div class="col-sm project" onclick="location.href='Opinion.html';">
 					<div class="row project-image-wrapper">
 						<div class="project-image opinion-image">
 							<div class="project-name">
@@ -520,12 +569,13 @@
 					<div class="row project-desc-wrapper">
 						<div class="project-desc">
 							<span>A twitter sentiment alalyzer which takes a word as input, analyze it by fetching
-								latest tweets from twitter api and shows the positivity, negativity and visibility of
+								latest tweets from twitter api and shows the positivity, negativity and visibility
+								of
 								that word.</span>
 						</div>
 					</div>
 				</div>
-				<div class="col-2 project" onclick="location.href='Cdgf.html';">
+				<div class="col-sm project" onclick="location.href='Cdgf.html';">
 					<div class="row project-image-wrapper">
 						<div class="project-image cdgf-image">
 							<div class="project-name">
@@ -535,13 +585,14 @@
 					</div>
 					<div class="row project-desc-wrapper">
 						<div class="project-desc">
-							<span>An android app that helps users to achieve their health goals. It has two features,
+							<span>An android app that helps users to achieve their health goals. It has two
+								features,
 								one is to detect calories of food from an image and the other is to give general
 								nutritional information regarding food.</span>
 						</div>
 					</div>
 				</div>
-				<div class="col-2 project" onclick="location.href='Ddms.html';">
+				<div class="col-sm project" onclick="location.href='Ddms.html';">
 					<div class="row project-image-wrapper">
 						<div class="project-image ddms-image">
 							<div class="project-name">
@@ -551,13 +602,35 @@
 					</div>
 					<div class="row project-desc-wrapper">
 						<div class="project-desc">
-							<span>An implementation of a fully working distributed NoSql database in java from scratch
+							<span>An implementation of a fully working distributed NoSql database in java from
+								scratch
 								using the Restlet framework. The product has features like Consistency and Partition
 								Tolerance. The final product was tested on Docker.</span>
 						</div>
 					</div>
 				</div>
-				<div class="col"></div>
+				<!-- <div class="col"></div> -->
+			</div>
+		</div>
+
+		<!-- Links to the social platforms -->
+		<div class="links-section">
+			<div class="row">
+				<div class="col-1" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
+					<a href="https://www.linkedin.com/in/mihirp97" target="_blank">
+						<img class="logo linkedin" src="Images/LinkedIn Logo.png" alt="linkedin">
+					</a>
+				</div>
+				<div class="col-1 link" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
+					<a href="https://www.github.com/mihir-1997" target="_blank">
+						<img class="logo github" src="Images/Github Logo.png" alt="github">
+					</a>
+				</div>
+				<div class="col-1 link" data-aos="fade-left" data-aos-offset="0" data-aos-duration="1500">
+					<a href="https://stackoverflow.com/users/12169960/mihir-patel" target="_blank">
+						<img class="logo stackoverflow" src="Images/Stackoverflow Logo.png" alt="stackoverflow">
+					</a>
+				</div>
 			</div>
 		</div>
 

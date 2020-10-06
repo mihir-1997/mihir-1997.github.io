@@ -1,0 +1,99 @@
+nav {
+    height: 50px;
+    padding: 0px;
+    background-color: #3399FF;
+    font-family: Verdana, sans-serif;
+    overflow: hidden;
+}
+
+nav>a {
+    float: left;
+    margin: 10px 20px;
+    font-size: 1.3em;
+}
+
+nav ul {
+    display: block;
+    float: right;
+    margin: 15px;
+}
+
+nav ul li {
+    list-style: none;
+    float: left;
+    margin: 0px 15px;
+}
+
+nav a {
+    text-decoration: none;
+    color: #FFFFFF;
+}
+
+nav a:hover {
+    color: #0056b3;
+}
+
+nav ul li a {
+    font-size: 1em;
+}
+
+.mobile-nav {
+    display: none;
+}
+
+@media only screen and (max-width: 800px) {
+    nav>a {
+        margin-top: 13px;
+        font-size: 1.2em;
+    }
+
+    nav ul {
+        display: block;
+    }
+
+    nav ul li a {
+        font-size: 0.9em;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav {
+        height: 40px;
+        overflow: visible;
+    }
+
+    nav>a {
+        clear: both;
+        height: 0px;
+        margin: 8px 15px;
+    }
+
+    nav ul {
+        background-color: #3399FF;
+        display: none;
+        padding: 0px;
+        clear: both;
+        width: 100%;
+        margin: auto;
+    }
+
+    nav ul li {
+        clear: both;
+        margin: 5px 5px 10px 15px;
+    }
+
+    nav .mobile-nav {
+        display: block;
+        float: right;
+        width: 24px;
+        height: 24px;
+        background: url("../Images/icons8-menu.svg") no-repeat;
+        border: none;
+        margin: 8px 10px;
+        outline: none;
+    }
+
+    nav .mobile-nav:hover {
+        cursor: pointer;
+    }
+}

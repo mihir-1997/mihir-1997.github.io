@@ -251,7 +251,6 @@ a {
 
 .technologies {
 	background-color: #F7F8FA;
-	/*border: 0.5px solid #99CCFF;*/
 }
 
 .technologies ul {
@@ -266,14 +265,13 @@ a {
 .projects {
 	height: auto;
 	background: #F7F8FA;
-	margin-bottom: 10%;
+	padding-bottom: 2%;
 }
 
 .project-heading-wrapper,
 .experience-heading-wrapper {
 	height: 20vh;
 	width: 100%;
-	/*background-color: #99CCFF;*/
 	position: relative;
 }
 
@@ -287,7 +285,6 @@ a {
 	top: 50%;
 	left: 50%;
 	transform: translate(-50%, -50%);
-	/*border-bottom: 3px solid #99CCFF;*/
 	color: #3399FF;
 }
 
@@ -299,14 +296,22 @@ a {
 }
 
 .projects-list {
-	margin: 100px 15px 0 15px;
-	/*background-color: #F7F8FA;*/
+	margin: 1% 15px 0 15px;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+}
+
+.projects-list-second-row {
+	margin: 3% 0 2% 0;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
 }
 
 .project {
+	flex-basis: 18%;
 	background-color: white;
-	position: relative;
-	height: 300px;
 	margin: 0 15px;
 	font-size: large;
 	cursor: pointer;
@@ -316,7 +321,8 @@ a {
 }
 
 .project-image-wrapper {
-	height: 60%;
+	height: 150px;
+	width: 100%;
 }
 
 .project:hover {
@@ -331,6 +337,7 @@ a {
 	text-align: center;
 	font-weight: bold;
 	width: 100%;
+	height: 100%;
 	color: white;
 	font-variant: small-caps;
 	position: relative;
@@ -368,20 +375,22 @@ a {
 	background-image: url("../Images/opinion.jpg");
 }
 
+.yelp-image {
+	opacity: 0.9;
+	background-color: #D8242E;
+}
+
+.glassdoor-image {
+	opacity: 0.9;
+	background-color: #11A53E;
+}
+
 .project-desc-wrapper {
 	height: 40%;
 }
 
 .project-desc {
-	position: absolute;
-	bottom: 10px;
 	font-size: x-small;
 	text-align: justify;
 	margin: 0 10px;
-}
-
-/* Mobile */
-
-@media only screen and (max-width: 400px) {
-	
 }

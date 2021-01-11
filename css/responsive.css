@@ -127,7 +127,7 @@
 
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 632px) {
 
     h1{
         font-size: 1.7em;
@@ -217,14 +217,14 @@
 
     /* Projects */
 
-    .projects-list, .skills-list {
-        margin: 20px 50px 20px 50px;
-        /*background-color: #F7F8FA;*/
+    .projects-list, .skills-list, .projects-list-second-row {
+        margin: 20px 1%;
     }
 
     .project, .skill {
         width: 400px;
-        margin: 10px
+        margin: 10px;
+        flex-basis: 40%;
     }
 
     .skills-header-container {
@@ -283,6 +283,11 @@
     .university {
         margin-left: -1%;
         margin-top: 10px;
+    }
+
+    .projects-list,
+    .projects-list-second-row {
+        display: block;
     }
 }
 

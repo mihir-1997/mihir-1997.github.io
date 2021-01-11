@@ -38,6 +38,11 @@ body {
     height: 70%; 
 }
 
+.yelp-video-output {
+	min-height: 300px;
+	width: 70%;
+}
+
 .left-margin,
 .right-margin {
 	background-color: #F7F8FA;

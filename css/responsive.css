@@ -288,6 +288,11 @@
     .projects-list,
     .projects-list-second-row {
         display: block;
+        margin: 20px 5%;
+    }
+
+    .project, .skill {
+        width: 90%;
     }
 }
 
